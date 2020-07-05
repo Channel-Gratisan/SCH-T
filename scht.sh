@@ -2,18 +2,18 @@
 # HunterNblz
 cat << "EOF"
 
-      _____    _____   _    _   _______ 
-     / ____|  / ____| | |  | | |__   __|
-    | (___   | |      | |__| |    | |   
-     \___ \  | |      |  __  |    | |   
-     ____) | | |____  | |  | |    | |   
-    |_____/   \_____| |_|  |_|    |_|   
-   ====================================  
-        [+]Moonton Checker 2K20[+]
-   ====================================
-   YOUTUBE:Shinchan Tutorial
-   IG    :@shinchanproject
-   ====================================
+         _____    _____   _    _   _______ 
+        / ____|  / ____| | |  | | |__   __|
+       | (___   | |      | |__| |    | |   
+        \___ \  | |      |  __  |    | |   
+        ____) | | |____  | |  | |    | |   
+       |_____/   \_____| |_|  |_|    |_|   
+      ====================================  
+           [+]Moonton Checker 2K20[+]
+      ====================================
+      YOUTUBE:Shinchan Tutorial
+      IG    :@shinchanproject
+      ====================================
 
 EOF
 
@@ -57,10 +57,10 @@ function check(){
 	fi
 }
 
-read -p "List Empas [+]=> " listempas
-read -p "Delimiter [+]=> " delim
-read -p "Thread [+]=> " persend
-read -p "Delay [+]=> " setleep
+read -p "List Empas [+]: " listempas
+read -p "Delimiter [+]: " delim
+read -p "Thread [+]: " persend
+read -p "Delay [+]: " setleep
 printf "\n"
 
 IFS=$'\r\n' GLOBIGNORE='*' command eval 'empas=($(cat $listempas))'
