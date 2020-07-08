@@ -1,5 +1,6 @@
 #!/bin/bash
 # HunterNblz
+echo -e "\e[1;32m"
 cat << "EOF"
 
           _____       _____      _    _      _______ 
@@ -56,7 +57,7 @@ function check(){
 		printf "| ${CY}${B}UNKNOWN${CC} | Email:${1} Password:${2} => [${TIME}]\n"
 	fi
 }
-
+echo -e "\e[1;35m"
 read -p "List Empas [+]: " listempas
 read -p "Delimiter [+]: " delim
 read -p "Thread [+]: " persend
