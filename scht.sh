@@ -14,7 +14,7 @@ cat << "EOF"
           ======================================
           RECODE BOLEH YANG PENTING JANGAN DI 
           JUAL BELIKAN ANJING :( !!!
-  WHATSAPP ME 083893242384 BELI UNCHEK PM AJA LER !!!
+    [T] [U] [Y] [U] [L]  [M] [O] [O] [N] [T] [O] [N]
  =======================================================
 
 EOF
