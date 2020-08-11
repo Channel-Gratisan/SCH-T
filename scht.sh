@@ -46,7 +46,7 @@ function check(){
 	local CODE=$(echo $result | grep -Po "(?<=code\":)[^,]*")
 	if [[ $STATUS =~ "Error_Success" ]]; then
 		printf "| ${OG}${B}LIVE${CC} | ${1}:${2} => [${PP}${TIME}]\n"
-		echo "${1}|${2}" >> Live.txtu
+		echo "${1}|${2}" >> Live.txt
 	elif [[ $STATUS =~ "Error_PasswdError" ]]; then
 		printf "| ${BL}${B}PWSALAH${CC} | ${1}:${2} => [${PP}${TIME}]\n"
 		echo "${1}|${2}" >> pwsalah.txt
